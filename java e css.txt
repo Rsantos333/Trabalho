@@ -1,0 +1,52 @@
+
+body {
+margin:0;
+padding: 0;
+border: 0; 
+color:#000;
+font-family: Arial;
+}
+
+.header {
+  background:#4969A6;
+  color:#FFF;
+}
+.container{
+  display: grid
+  grid-template: repeat (3,fr);
+  gap: 2rem;
+  margin: -3rem 1rem e 1rem;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem 2rem;
+  border-radius: .25rem;
+  justify-content: space-between;
+  box-shadow: 0px 5px 15px rgba(0,0,0.2)
+
+
+
+class Moedas{
+  dolar;
+  real;
+  
+  constructor() {
+    this.dolar =  4.74;
+  }
+
+
+converterRealDolar() {
+  this.real = document.getElementById("real").value
+  console.log(this.real)
+  const valorEmDolar = parseFloat(this.real)/ this.dolar;
+  
+  document.getElementById("resultado").innerText = valorEmDolar;
+  
+   }
+  
+}
+
+const moeda = new Moedas();
+
+}
